@@ -725,7 +725,7 @@
           },
           "disableTextWrap": false,
           "editorMode": "builder",
-          "expr": "kube_pod_container_state_started{namespace=\"event-automation\", pod=~\"my-kafka-cluster-kafka-0|my-kafka-cluster-kafka-1|my-kafka-cluster-kafka-2\", container=\"kafka\"}",
+          "expr": "kube_pod_container_state_started{namespace=\"event-automation\", pod=~\"my-kafka-cluster-kafka-3|my-kafka-cluster-kafka-4|my-kafka-cluster-kafka-5\", container=\"kafka\"}",
           "format": "table",
           "fullMetaSearch": false,
           "includeNullMetadata": true,
@@ -844,7 +844,7 @@
           },
           "disableTextWrap": false,
           "editorMode": "builder",
-          "expr": "sum by(pod) (kube_pod_container_status_restarts_total{namespace=\"event-automation\", pod=~\"my-kafka-cluster-kafka-0|my-kafka-cluster-kafka-1|my-kafka-cluster-kafka-2\", container=\"kafka\"})",
+          "expr": "sum by(pod) (kube_pod_container_status_restarts_total{namespace=\"event-automation\", pod=~\"my-kafka-cluster-kafka-3|my-kafka-cluster-kafka-4|my-kafka-cluster-kafka-5\", container=\"kafka\"})",
           "fullMetaSearch": false,
           "includeNullMetadata": true,
           "instant": false,
@@ -958,7 +958,7 @@
           },
           "disableTextWrap": false,
           "editorMode": "builder",
-          "expr": "kubelet_volume_stats_available_bytes{namespace=\"event-automation\", persistentvolumeclaim=~\"data-my-kafka-cluster-kafka-0|data-my-kafka-cluster-kafka-1|data-my-kafka-cluster-kafka-2\"}",
+          "expr": "kubelet_volume_stats_available_bytes{namespace=\"event-automation\", persistentvolumeclaim=~\"data-my-kafka-cluster-kafka-3|data-my-kafka-cluster-kafka-4|data-my-kafka-cluster-kafka-5\"}",
           "fullMetaSearch": false,
           "includeNullMetadata": true,
           "instant": false,
@@ -968,7 +968,7 @@
           "useBackend": false
         }
       ],
-      "title": "Disk space remaining (Kafka)",
+      "title": "Disk space remaining (brokers)",
       "type": "timeseries"
     },
     {
@@ -1058,7 +1058,7 @@
           },
           "disableTextWrap": false,
           "editorMode": "builder",
-          "expr": "kubelet_volume_stats_available_bytes{namespace=\"event-automation\", persistentvolumeclaim=~\"data-my-kafka-cluster-zookeeper-0|data-my-kafka-cluster-zookeeper-1|data-my-kafka-cluster-zookeeper-2\"}",
+          "expr": "kubelet_volume_stats_available_bytes{namespace=\"event-automation\", persistentvolumeclaim=~\"data-my-kafka-cluster-controller-0|data-my-kafka-cluster-controller-1|data-my-kafka-cluster-controller-2\"}",
           "fullMetaSearch": false,
           "includeNullMetadata": true,
           "instant": false,
@@ -1068,7 +1068,7 @@
           "useBackend": false
         }
       ],
-      "title": "Disk space remaining (ZooKeeper)",
+      "title": "Disk space remaining (controllers)",
       "type": "timeseries"
     },
     {
