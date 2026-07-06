@@ -3,7 +3,6 @@ kind: EventGateway
 metadata:
   name: my-eem-gateway
   labels:
-    backup.events.ibm.com/component: eventgateway
     events.ibm.com/manager: my-eem-manager
 spec:
   gatewayGroupName: gateway-group
