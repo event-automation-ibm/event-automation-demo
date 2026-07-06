@@ -5,7 +5,6 @@ metadata:
     eventstreams.ibm.com/use-connector-resources: 'true'
   name: kafka-connect-cluster
 spec:
-  # Required fields for v1 API at spec level
   groupId: kafka-connect
   configStorageTopic: connect-configs
   offsetStorageTopic: connect-offsets
